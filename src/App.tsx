@@ -82,12 +82,12 @@ ${brainDump}
 Target role: ${targetRole || 'not specified'}`;
 
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('/api/analyse', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-api-key': import.meta.env.VITE_ANTHROPIC_API_KEY,
-          'anthropic-version': '2023-06-01',
+          
+          
         },
         body: JSON.stringify({
           model: 'claude-sonnet-4-20250514',
