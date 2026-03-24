@@ -51,15 +51,15 @@ export default function Screen2PivotReason({ goTo, pivotReason, setPivotReason }
         <div className="flex justify-center gap-2 mb-12">
           <div
             className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: 'var(--orange)' }}
+            style={{ background: 'var(--brand-gradient)' }}
           ></div>
           <div
             className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: '#D1D1D1' }}
+            style={{ backgroundColor: '#E8E4F5' }}
           ></div>
           <div
             className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: '#D1D1D1' }}
+            style={{ backgroundColor: '#E8E4F5' }}
           ></div>
         </div>
 
@@ -81,8 +81,8 @@ export default function Screen2PivotReason({ goTo, pivotReason, setPivotReason }
               onClick={() => setPivotReason(reason.id)}
               className="text-left rounded-2xl p-5 cursor-pointer transition-all"
               style={{
-                border: pivotReason === reason.id ? '2px solid var(--orange)' : '1px solid var(--border)',
-                backgroundColor: pivotReason === reason.id ? '#FEF3F0' : 'var(--card)',
+                border: pivotReason === reason.id ? '2px solid var(--purple)' : '1px solid var(--border)',
+                backgroundColor: pivotReason === reason.id ? '#F5F0FF' : 'var(--card)',
               }}
             >
               <div className="flex flex-col items-center text-center gap-2">

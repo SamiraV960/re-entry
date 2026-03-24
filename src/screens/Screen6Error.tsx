@@ -8,7 +8,7 @@ export default function Screen6Error({ goTo }: Screen6ErrorProps) {
       <h1 className="text-4xl mb-8">Error</h1>
       <button
         onClick={() => goTo('landing')}
-        className="px-6 py-3 bg-[var(--orange)] text-white rounded-full"
+        className="btn-primary"
       >
         Back to Start
       </button>

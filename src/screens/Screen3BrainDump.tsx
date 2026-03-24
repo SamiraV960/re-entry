@@ -63,15 +63,15 @@ export default function Screen3BrainDump({
         <div className="flex justify-center gap-2 mb-12">
           <div
             className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: '#D1D1D1' }}
+            style={{ backgroundColor: '#E8E4F5' }}
           ></div>
           <div
             className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: 'var(--orange)' }}
+            style={{ background: 'var(--brand-gradient)' }}
           ></div>
           <div
             className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: '#D1D1D1' }}
+            style={{ backgroundColor: '#E8E4F5' }}
           ></div>
         </div>
 
@@ -90,13 +90,13 @@ export default function Screen3BrainDump({
         {errorMessage && (
           <div
             className="rounded-xl p-4 mb-6 flex items-start gap-3"
-            style={{ backgroundColor: '#FEF3F0', border: '1px solid var(--orange)' }}
+            style={{ backgroundColor: '#F5F0FF', border: '1px solid var(--purple)' }}
           >
             <p className="flex-1 text-sm" style={{ color: 'var(--text)' }}>
               {errorMessage}
             </p>
             <button onClick={() => setErrorMessage(null)} className="flex-shrink-0">
-              <X size={18} style={{ color: 'var(--orange)' }} />
+              <X size={18} style={{ color: 'var(--purple)' }} />
             </button>
           </div>
         )}
@@ -106,7 +106,7 @@ export default function Screen3BrainDump({
           value={brainDump}
           onChange={(e) => setBrainDump(e.target.value)}
           placeholder="For example: I was a Senior Marketing Manager for 8 years before taking 4 years out to raise my children. During that time I organised a large community fundraiser, managed our household budget and did some volunteer comms work for my daughter's school..."
-          className="w-full min-h-[180px] rounded-xl p-4 text-base resize-y focus:outline-none focus:ring-2 focus:ring-offset-2 mb-2"
+          className="w-full min-h-[180px] rounded-xl p-4 text-base resize-y mb-2"
           style={{
             border: '1px solid var(--border)',
             color: 'var(--text)',
@@ -117,7 +117,7 @@ export default function Screen3BrainDump({
         {/* Character counter */}
         <div
           className="text-xs text-right mb-6"
-          style={{ color: isValid ? 'var(--orange)' : 'var(--muted)' }}
+          style={{ color: isValid ? 'var(--purple)' : 'var(--muted)' }}
         >
           {charCount} / {MIN_CHARS} minimum
         </div>
@@ -144,7 +144,7 @@ export default function Screen3BrainDump({
             onChange={(e) => setLinkedinUrl(e.target.value)}
             onBlur={(e) => validateLinkedInUrl(e.target.value)}
             placeholder="https://www.linkedin.com/in/yourname"
-            className="w-full rounded-xl p-4 text-base focus:outline-none focus:ring-2 focus:ring-offset-2"
+            className="w-full rounded-xl p-4 text-base"
             style={{
               border: '1px solid var(--border)',
               color: 'var(--text)',
@@ -154,7 +154,7 @@ export default function Screen3BrainDump({
           {linkedinError && (
             <p
               className="text-[12px] mt-1.5"
-              style={{ color: 'var(--orange)', fontFamily: 'DM Sans, sans-serif' }}
+              style={{ color: 'var(--coral)', fontFamily: 'DM Sans, sans-serif' }}
             >
               Please enter a LinkedIn profile URL
             </p>
@@ -176,7 +176,7 @@ export default function Screen3BrainDump({
             value={targetRole}
             onChange={(e) => setTargetRole(e.target.value)}
             placeholder="e.g., Marketing Manager, Project Coordinator..."
-            className="w-full rounded-xl p-4 text-base focus:outline-none focus:ring-2 focus:ring-offset-2"
+            className="w-full rounded-xl p-4 text-base"
             style={{
               border: '1px solid var(--border)',
               color: 'var(--text)',

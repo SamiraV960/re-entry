@@ -10,7 +10,7 @@ export default function Screen4Loading({ goTo }: Screen4LoadingProps) {
         alt="re-entry"
         className="h-[36px] md:h-[44px] w-auto"
       />
-      <h1 className="text-[32px] italic" style={{ color: 'var(--orange)' }}>
+      <h1 className="text-[28px] italic gradient-text" style={{ fontFamily: 'Playfair Display, serif' }}>
         Translating your experience...
       </h1>
       <div className="spinner"></div>

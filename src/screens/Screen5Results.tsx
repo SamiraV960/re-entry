@@ -74,13 +74,13 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
   const getPriorityStyle = (priority: string) => {
     switch (priority) {
       case 'high':
-        return { backgroundColor: '#FEF3F0', color: 'var(--orange)' };
+        return { backgroundColor: '#FFF0F5', color: '#FF8FA3' };
       case 'medium':
-        return { backgroundColor: '#FFFBEB', color: '#92400E' };
+        return { backgroundColor: '#FFF5EE', color: '#FFB37A' };
       case 'low':
-        return { backgroundColor: '#F0FDF4', color: 'var(--success)' };
+        return { backgroundColor: '#F5F0FF', color: '#A88BFF' };
       default:
-        return { backgroundColor: '#FEF3F0', color: 'var(--orange)' };
+        return { backgroundColor: '#FFF0F5', color: '#FF8FA3' };
     }
   };
 
@@ -101,7 +101,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
             className="text-[11px] mb-3 font-medium"
             style={{
               letterSpacing: '0.08em',
-              color: 'var(--orange)',
+              color: 'var(--purple)',
               fontFamily: 'DM Sans, sans-serif',
             }}
           >
@@ -124,8 +124,8 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
             onClick={handleCopy}
             className="rounded-full text-[13px] font-medium flex items-center gap-2"
             style={{
-              border: '1px solid var(--orange)',
-              color: 'var(--orange)',
+              border: '1px solid var(--purple)',
+              color: 'var(--purple)',
               padding: '10px 16px',
               fontFamily: 'DM Sans, sans-serif',
               backgroundColor: 'transparent',
@@ -154,7 +154,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
             className="text-[11px] mb-4 font-medium"
             style={{
               letterSpacing: '0.08em',
-              color: 'var(--orange)',
+              color: 'var(--purple)',
               fontFamily: 'DM Sans, sans-serif',
             }}
           >
@@ -167,9 +167,9 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
                 onClick={() => toggleSkill(index)}
                 className="rounded-full text-[13px]"
                 style={{
-                  backgroundColor: '#FEF3F0',
-                  border: '1px solid #E8593C33',
-                  color: 'var(--orange)',
+                  backgroundColor: '#F5F0FF',
+                  border: '1px solid var(--lilac)',
+                  color: '#7B5FCC',
                   padding: '6px 14px',
                   fontFamily: 'DM Sans, sans-serif',
                 }}
@@ -200,7 +200,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
             className="text-[11px] mb-4 font-medium"
             style={{
               letterSpacing: '0.08em',
-              color: 'var(--orange)',
+              color: 'var(--purple)',
               fontFamily: 'DM Sans, sans-serif',
             }}
           >
@@ -239,7 +239,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
                   rel="noopener noreferrer"
                   className="text-[12px]"
                   style={{
-                    color: 'var(--orange)',
+                    color: 'var(--purple)',
                     fontFamily: 'DM Sans, sans-serif',
                   }}
                 >
@@ -259,7 +259,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
             className="text-[11px] mb-4 font-medium"
             style={{
               letterSpacing: '0.08em',
-              color: 'var(--orange)',
+              color: 'var(--purple)',
               fontFamily: 'DM Sans, sans-serif',
             }}
           >
@@ -314,7 +314,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
           className="rounded-r-xl p-6 md:p-8"
           style={{
             border: '1px solid var(--border)',
-            borderLeft: '4px solid var(--orange)',
+            borderLeft: '4px solid var(--purple)',
             borderRadius: '0 12px 12px 0',
           }}
         >
@@ -322,7 +322,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
             className="text-[11px] mb-3 font-medium"
             style={{
               letterSpacing: '0.08em',
-              color: 'var(--orange)',
+              color: 'var(--purple)',
               fontFamily: 'DM Sans, sans-serif',
             }}
           >
@@ -351,7 +351,7 @@ export default function Screen5Results({ goTo, aiResult, resetApp }: Screen5Resu
             disabled={nextStepDone}
             className="btn-primary"
             style={{
-              backgroundColor: nextStepDone ? 'var(--success)' : undefined,
+              backgroundColor: nextStepDone ? '#7B5FCC' : undefined,
             }}
           >
             {nextStepDone ? "Done!" : "I'm on it"}

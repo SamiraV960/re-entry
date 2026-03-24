@@ -86,8 +86,6 @@ Target role: ${targetRole || 'not specified'}`;
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          
-          
         },
         body: JSON.stringify({
           model: 'claude-sonnet-4-20250514',

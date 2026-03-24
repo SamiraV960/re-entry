@@ -32,7 +32,7 @@ export default function Screen1Landing({ goTo }: Screen1LandingProps) {
             <div key={index} className="flex items-center gap-2">
               <div
                 className="w-6 h-6 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: 'var(--orange)' }}
+                style={{ background: 'var(--brand-gradient)' }}
               >
                 <Check size={14} color="white" strokeWidth={3} />
               </div>
