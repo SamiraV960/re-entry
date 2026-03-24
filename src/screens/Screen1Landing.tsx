@@ -17,7 +17,7 @@ export default function Screen1Landing({ goTo }: Screen1LandingProps) {
         <img
           src="/re-entry_logo.jpg"
           alt="re-entry"
-          className="h-[56px] md:h-[72px] w-auto mb-4"
+          className="h-[112px] md:h-[144px] w-auto mb-4"
         />
         <h1 className="text-[48px] md:text-[56px] leading-tight text-center" style={{ color: 'var(--text)' }}>
           Your career break isn't a hole. It's a pivot.
